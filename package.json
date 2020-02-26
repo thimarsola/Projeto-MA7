@@ -1,0 +1,15 @@
+{
+  "name": "projeto_ma7",
+  "version": "1.0.0",
+  "description": "Projeto de Criação do Website MA7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago Marsola - Goognet Solução Digital",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  }
+}

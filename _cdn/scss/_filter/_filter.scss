@@ -1,0 +1,54 @@
+#filter{
+    margin: 0;
+    padding: 3em 0;
+    background-color: $bg-color2;
+    //HEADER
+    .main_filter_header{
+        margin: 0;
+        padding: 0;
+        h1{
+            font-style: normal;
+            font-size: 1.375em;
+            font-weight: $font-medium;
+            color: $ma-color1;
+            img{
+                padding-right: .5em;
+            }
+        }
+    }
+    //CONTENT
+    .main_filter_content{
+        margin: 1.25em 0 0 0;
+        padding: 0;
+        .main_filter_content_form{
+            padding: 0;
+            label{
+                font-style: normal;
+                font-size: 1em;
+                font-weight: $font-regular;
+                color: $ma-color2;
+            }
+            select{
+                font-style: normal;
+                font-size: .875em;
+                font-weight: $font-light;
+                color: $ma-color4;
+            }
+            .main_filter_content_button{
+                margin: 1.25em 0 0 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end;
+                button{
+                    font-style: normal;
+                    font-size: 1.125em;
+                    font-weight: $font-regular;
+                    color: $ma-color3;
+                    img{
+                        padding-right: .5em;
+                    }
+                }
+            }
+        }
+    }
+}

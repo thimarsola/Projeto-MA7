@@ -1,0 +1,83 @@
+#footer{
+    //CTA
+    #cta{
+        background: -webkit-gradient(linear, left top, left bottom, from(#3C3C3B), to(#252525));
+        background: -o-linear-gradient(top, #3C3C3B 0%, #252525 100%);
+        background: linear-gradient(180deg, #3C3C3B 0%, #252525 100%);
+        .footer_cta_container{
+            margin: 0 auto;
+            padding: 2.5em 1em;
+            max-width: 37em;
+            //HEADER
+            .footer_cta_header{
+                margin: 0 0 1.5em 0;
+                h1{
+                    margin: 0;
+                    padding: 0;
+                    font-style: normal;
+                    font-size: 2em;
+                    font-weight: $font-medium;
+                    color: $ma-color3;
+                    text-align: center;
+                }
+                hr{
+                    margin: 1em auto 0 auto;
+                    padding: 0;
+                    width: 5em;
+                    border: 2px solid $ma-color1;
+                }
+            }
+            //CONTENT
+            .footer_cta_content{
+                p{
+                    margin: 0 0 1em 0;
+                    padding: 0;
+                    font-style: normal;
+                    font-size: 1.125em;
+                    font-weight: $font-light;
+                    color: $ma-color3;
+                    text-align: center;
+                }
+                //FORM
+                .footer_cta_form{
+                    padding: 0;
+                    margin: auto;
+                    max-width: 23em;
+                    input{
+                        font-style: normal;
+                        font-size: .875em;
+                        font-weight: $font-light;
+                        color: $ma-color4;
+                    }
+                    button{
+                        font-style: normal;
+                        font-size: 1em;
+                        font-weight: $font-light;
+                        color: $ma-color3;
+                        &:hover{
+                            color: darken($ma-color3, 10%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //COPYRIGHT
+    .footer_copyright{
+        margin: 0;
+        padding: 2em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            margin: 1em 0 0 0;
+            padding: 0;
+            font-style: normal;
+            font-size: .875em;
+            font-weight: $font-light;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    //DEVELOPER
+}
