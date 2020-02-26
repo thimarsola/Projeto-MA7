@@ -80,4 +80,33 @@
         }
     }
     //DEVELOPER
+    .footer_developer{
+        margin: 0;
+        padding: .5em 0;
+        background: -webkit-gradient(linear, left top, left bottom, from(#3C3C3B), to(#252525));
+        background: -o-linear-gradient(top, #3C3C3B 0%, #252525 100%);
+        background: linear-gradient(180deg, #3C3C3B 0%, #252525 100%);
+        p{
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-size: 1em;
+            font-weight: $font-light;
+            text-align: center;
+            text-transform: uppercase;
+            small{
+                font-weight: inherit;
+                color: $ma-color3;
+                strong, a{
+                    font-size: inherit;
+                    font-weight: $font-medium;
+                    color: inherit;
+                    &:hover{
+                        color: $ma-color1;
+                        @include transition(.3s);
+                    }
+                }
+            }
+        }
+    }
 }
