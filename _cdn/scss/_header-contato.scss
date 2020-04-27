@@ -1,0 +1,26 @@
+#header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    .navbar{
+        min-height: 6em;
+        border-bottom: 2.5px solid $ma-color1;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        text-align: center;
+        .navbar-brand{
+            img{
+                height: 4.5em;
+            }
+        }
+        .collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

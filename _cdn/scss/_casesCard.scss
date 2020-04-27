@@ -1,0 +1,91 @@
+.main_cases_content_card{
+    box-shadow: 0 0 10px rgba(#333, 0.3);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    &:hover{
+        transform: scale(1.025);
+        -webkit-transition: ease-in-out .3s;
+        -moz-transition: ease-in-out .3s;
+        transition: ease-in-out .3s;
+    }
+    //CARD IMAGE
+    .img_card{
+        width: 100%;
+        height: 15em;
+        border-bottom: 3px solid $ma-color1;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    //CARD CONTENT
+    .content_card{
+        margin: 0;
+        padding: 2em;
+        //CARD HEADER
+        .content_card_header{
+            h2{
+                margin: 0;
+                padding: 0;
+                font-style: normal;
+                font-size: 1.25em;
+                font-weight: $font-regular;
+            }
+        }
+        //CARD TYPE
+        .content_card_type{
+            margin: 0 0 1.125em 0;
+            padding: 0;
+            p{
+                margin: 0;
+                padding: 0;
+                font-style: normal;
+                font-size: .75em;
+                font-weight: $font-light;
+                strong{
+                    font-style: inherit;
+                    font-size: inherit;
+                    font-weight: $font-medium;
+                }
+            }
+        }
+        //CARD PRICE
+        .content_card_price{
+            margin: 0 0 0.5em 0;
+            padding: 0;
+            p{
+                margin: 0;
+                padding: 0;
+                font-style: normal;
+                font-size: 1.25em;
+                font-weight: $font-light;
+                span{
+                    margin: 0;
+                    padding: 0;
+                    font-style: inherit;
+                    font-size: .75rem;
+                    font-weight: $font-light;
+                    strong{
+                        margin: 0;
+                        padding: 0;
+                        font-style: inherit;
+                        font-size: inherit;
+                        font-weight: $font-medium;
+                    }
+                }
+                strong{
+                    margin: 0;
+                    padding: 0;
+                    font-style: inherit;
+                    font-size: inherit;
+                    font-weight: $font-medium;
+                    color: $ma-color1;
+                }
+            }
+        }
+    }
+}

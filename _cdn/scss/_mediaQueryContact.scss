@@ -1,0 +1,29 @@
+//MOBILE
+@media screen and (max-width: 425px) {
+    #contato{
+        .main_contact_header{
+            margin-bottom: 2em;
+            h1{
+                font:{
+                    size: 2em;
+                }
+                text:{
+                    align: left;
+                }
+            }
+            p{
+                font:{
+                    size: 1em;
+                }
+                text:{
+                    align: justify;
+                }
+            }
+        }
+        .main_contact_content{
+            .main_contact_content_form{
+                padding: 1em;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+#post{
+    margin: 0;
+    padding: 5em 0;
+    .main_post_header{
+        margin: 0;
+        padding: 0;
+        h1{
+            @extend %title;
+            margin: 0;
+            padding: 0;
+            color: $ma-color1;
+        }
+    }
+    .main_post_image{
+        margin: 2.5em 0;
+        padding: 0;
+        img{
+            width: 100% !important;
+            min-height: 15em;
+            object:{
+                fit: cover;
+                position: center;
+            }
+        }
+    }
+    .main_post_content{
+        margin: 0;
+        padding: 0;
+        p{
+            margin: 0;
+            padding: 0;
+            font:{
+                style: normal;
+                size: 1em;
+                weight: $font-light;
+            }
+            line-height: 1.875em;
+            text:{
+                align: justify;
+            }
+        }
+    }
+}

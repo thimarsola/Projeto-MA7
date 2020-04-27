@@ -1,0 +1,37 @@
+#blog{
+    margin: 0;
+    padding: 5em 0;
+    background-color: $bg-color2;
+    //HEADER
+    .main_blog_header{
+        @extend %title;
+        p{
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-size: 1.375em;
+            font-weight: $font-regular;
+            text-align: center;
+            color: $ma-color4;
+        }
+    }
+    //CONTENT
+    @import "blogCard";
+    //BUTTON
+    .main_blog_button{
+        margin: 3em 0 0 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        .btn{
+            padding: .5em 1.785em;
+            fnt-style: normal;
+            font-size: 1.125em;
+            font-weight: $font-regular;
+            color: $ma-color3;
+            img{
+                padding-left: .1em;
+            }
+        }
+    }
+}

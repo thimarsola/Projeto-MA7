@@ -1,0 +1,39 @@
+#auctions{
+    margin: 0;
+    padding: 5em 0;
+    //HEADER
+    .main_auctions_header{
+        @extend %title;
+        p{
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-size: 1.375em;
+            font-weight: $font-regular;
+            text-align: center;
+            color: $ma-color4;
+        }
+    }
+    //CONTENT
+    .main_auctions_content{
+        //CARD
+        @import "auctionsCard";
+    }
+    //BUTTON
+    .main_auctions_button{
+        margin: 3em 0 0 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        .btn{
+            padding: .5em 1.785em;
+            fnt-style: normal;
+            font-size: 1.125em;
+            font-weight: $font-regular;
+            color: $ma-color3;
+            img{
+                padding-left: .1em;
+            }
+        }
+    }
+}

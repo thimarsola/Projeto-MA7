@@ -1,0 +1,194 @@
+#imovel{
+    margin: 0;
+    padding: 5em 0 0 0;
+    .main_immobile{
+        .main_immobile_dates_header{
+            h1{
+                margin: 0;
+                padding: 0;
+                font:{
+                    style: normal;
+                    size: 3.375em;
+                    weight: $font-regular;
+                }
+            }
+            hr{
+                margin: 1.375em 0 2em 0;
+                padding: 0;
+                width: 5em;
+                border: 2px solid $ma-color1;
+            }
+        }
+        .main_immobile_dates_content{
+            .main_immobile_dates_content_price{
+                margin: 0;
+                padding: 0;
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font:{
+                        style: normal;
+                        size: 2em;
+                        weight: $font-regular;
+                    }
+                }
+            }
+            .main_immobile_dates_content_code{
+                margin: 1em 0 1.75em 0;
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font:{
+                        style: normal;
+                        size: 1em;
+                        weight: $font-regular;
+                    }
+                    span{
+                        margin-right: .5em;
+                        font-size: inherit;
+                        color: $ma-color1;
+                    }
+                }
+            }
+            .main_immobile_dates_content_location{
+                margin: 0;
+                padding: 0;
+                p{
+                    display: flex;
+                    align-self: center;
+                    margin: 0;
+                    padding: 0;
+                    font:{
+                        style: normal;
+                        size: 1.5em;
+                        weight: $font-medium;
+                    }
+                    img{
+                        margin-right: .5em;
+                    }
+                }
+            }
+        }
+        .main_immobile_dates_content_details{
+            margin: 2.75em 0 1.25em 0;
+            padding: 0;
+            & > p:first-child{
+                margin-bottom: 1em;
+                font:{
+                    size: 1.125em;
+                }
+            }
+            p{
+                margin: 0;
+                padding: 0;
+                font:{
+                    style: normal;
+                    size: 1em;
+                    weight: $font-light;
+                }
+                strong{
+                    font:{
+                        weight: $font-medium;
+                    }
+                }
+            }
+        }
+        .main_immobile_dates_content_description{
+            margin: 0;
+            padding: 0;
+            p{
+                margin: 0;
+                padding: 0;
+                font:{
+                    style: normal;
+                    size: 1em;
+                    weight: $font-light;
+                }
+                text:{
+                    align: justify;
+                }
+            }
+        }
+    }
+    .main_immobile_form{
+        .main_contact_content_form_header{
+            margin: 0 0 4rem 0;
+            padding: 0;
+            h1{
+                margin: 0 0 1.25rem 0;
+                padding: 0;
+                font:{
+                    style: normal;
+                    size: 2.625em;
+                    weight: $font-medium;
+                }
+                text:{
+                    align: center;
+                }
+                color: $ma-color1;
+            }
+            p{
+                margin: 0;
+                padding: 0;
+                font:{
+                    style: normal;
+                    size: 1.25em;
+                    weight: $font-light;
+                }
+                text:{
+                    align: center;
+                }
+                color: $ma-color2;
+            }
+        }
+        .main_contact_content_form_content{
+            .main_contact_content_form{
+                margin: 0 auto;
+                padding: 2em;
+                max-width: 40em;
+                background:{
+                    color: $ma-color3;
+                }
+                box-shadow: 0 0 10px rgba(#333, .3);
+                .main_contact_content_form_header{
+                    margin: 0 0 1.5rem 0;
+                    padding: 0;
+                    h2{
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        font:{
+                            style: normal;
+                            size: 1.375rem;
+                            weight: $font-medium;
+                        }
+                        color: #878787;
+                        img{
+                            margin: 0 1rem 0 0;
+                            padding: 0;
+                        }
+                    }
+                }
+                .main_contact_content_form_content{
+                    margin: 0;
+                    padding: 0;
+                    form{
+                        input, textarea{
+                            font:{
+                                style: normal;
+                                size: .875em;
+                                weight: $font-light;
+                            }
+                            color: #A7A7A7;
+                        }
+                        .button_form{
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

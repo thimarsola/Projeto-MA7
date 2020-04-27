@@ -60,7 +60,7 @@
 
     <!--CSS-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="_cdn/css/styles_main.css">
+    <link rel="stylesheet" href="_cdn/css/styles_case.css">
 
     <title>MA7 Negócios - Arrematação de Imóveis e Aquisição de Créditos/Diretos</title>
 
@@ -102,74 +102,21 @@
 </header>
 <!-- MAIN -->
 <main id="main">
-    <!-- FILTER -->
-    <section id="filter" class="main_filter">
+    <!-- CASES -->
+    <section id="cases" class="main_cases">
         <div class="container">
             <!-- HEADER -->
-            <header class="main_filter_header">
-                <h1><img src="_cdn/img/vt-filter.svg" alt="MA7 Negócios">Filtro</h1>
-            </header>
-            <!-- CONTENT -->
-            <div class="main_filter_content">
-                <form action="" class="main_filter_content_form">
-                    <div class="row">
-                        <!-- STATE -->
-                        <div class="form-group col-sm-3 mt-sm-4">
-                            <label for="state">Estado</label>
-                            <br>
-                            <select name="state" id="state" class="form-control" >
-                                <option>Escolha...</option>
-                            </select>
-                        </div>
-                        <!-- STATE -->
-                        <div class="form-group col-sm-3 mt-sm-4">
-                            <label for="city">Cidade</label>
-                            <br>
-                            <select name="city" id="city" class="form-control">
-                                <option>Escolha...</option>
-                            </select>
-                        </div>
-                        <!-- STATE -->
-                        <div class="form-group col-sm-3 mt-sm-4">
-                            <label for="neighborhood">Bairro</label>
-                            <br>
-                            <select name="neighborhood" id="neighborhood" class="form-control">
-                                <option>Escolha...</option>
-                            </select>
-                        </div>
-                        <!-- CATEGORY -->
-                        <div class="form-group col-sm-3 mt-sm-4">
-                            <label for="category">Categoria</label>
-                            <br>
-                            <select name="category" id="category" class="form-control">
-                                <option>Escolha...</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- BUTTON -->
-                    <div class="main_filter_content_button">
-                        <button type="submit" class="btn btn-ma-color1"><img src="_cdn/img/vt-search.svg" alt="MA7 Negócios">Pesquisar</button>
-                    </div>
-            </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- AUCTIONS -->
-    <section id="auctions" class="main_auctions">
-        <div class="container">
-            <!-- HEADER -->
-            <header class="main_auctions_header">
-                <h1>Próximos leilões</h1>
+            <header class="main_cases_header">
+                <h1>Conheça todos os nossos cases de <span>Sucesso!</span></h1>
                 <hr>
-                <p>As melhores oportunidades de negócio você encontra aqui!</p>
+                <p>Conheça abaixo todos eles!</p>
             </header>
             <!-- CONTENT -->
-            <div class="main_auctions_content">
+            <div class="main_cases_content">
                 <div class="row">
                     <!-- CARD -->
                     <article class="col-lg-4 col-md-6 my-3">
-                        <div class="main_auctions_content_card">
+                        <div class="main_cases_content_card">
                             <!-- CARD IMAGE -->
                             <div class="img_card">
                                 <img src="_cdn/img/img-test-card.jpg" alt="MA7 Negócios">
@@ -188,63 +135,35 @@
                                 </div>
                                 <!-- CARD PRICE -->
                                 <div class="content_card_price">
-                                    <p><span><strong>1ºPraça:</strong> 30/01/2020</span></p>
+                                    <p><span>Arrematado por:</span></p>
                                     <p><strong>R$ 144.000,00</strong></p>
                                 </div>
-                                <!-- CARD PRICE -->
-                                <div class="content_card_price">
-                                    <p><span><strong>2ºPraça:</strong> 30/01/2020</span></p>
-                                    <p><strong>R$ 144.000,00</strong></p>
-                                </div>
-                                <a href="#" class="btn btn-ma-color1 btn-block btn_card">Saiba mais</a>
                             </div>
                         </div>
                     </article>
                 </div>
             </div>
-            <div class="main_auctions_button">
-                <a href="#" class="btn btn-ma-color1">veja mais <img src="_cdn/img/vt-see-more.svg" alt="MA7 Negócios"></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOG NOTICES -->
-    <section id="blog" class="main_blog">
-        <div class="container">
-            <!-- HEADER -->
-            <header class="main_blog_header">
-                <h1>Últimas notícias do blog</h1>
-                <hr>
-                <p>Aqui você encontra os melhores conteúdos sobre o segmento!</p>
-            </header>
-            <!-- CONTENT -->
-            <div class="main_blog_content">
-                <div class="row">
-                    <article class="col-lg-4 col-md-6 my-3">
-                        <div class="main_blog_content_card">
-                            <!-- CARD IMAGE -->
-                            <div class="img_card">
-                                <img src="_cdn/img/img-test-blog.jpg" alt="MA7 Negócios">
-                            </div>
-                            <!-- CARD CONTENT -->
-                            <div class="content_card">
-                                <!-- CARD HEADER -->
-                                <header class="content_card_header">
-                                    <h2>6 cidades boas para morar no Brasil</h2>
-                                    <p><small>09/03/2020</small></p>
-                                </header>
-                                <!-- CARD TYPE -->
-                                <div class="content_card_description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque ipsum, ullamcorper vel velit at, placerat sagittis lacus. Phasellus vel dolor dui...</p>
-                                </div>
-                                <p class="link_card"><a href="#">Ler Mais...</a></p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="main_blog_button">
-                <a href="#" class="btn btn-ma-color1">veja mais <img src="_cdn/img/vt-see-more.svg" alt="MA7 Negócios"></a>
+            <!-- PAGINATION -->
+            <div class="main_cases_pagination mt-5">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </section>

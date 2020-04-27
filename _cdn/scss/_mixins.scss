@@ -1,0 +1,72 @@
+/*COLORS*/
+$ma-color1: #8BBF4A;
+$ma-color2: #333333;
+$ma-color3: #ffffff;
+$ma-color4: #A7A7A7;
+
+/*BACKGROUND COLOR*/
+$bg-color1: rgba(255, 255, 255, 0.8);
+$bg-color2: #F8F8F8;
+
+/*BOOTSTRAP COLORS*/
+$theme-colors: (
+    "ma-color1": $ma-color1,
+    "ma-color2": $ma-color2,
+    "ma-color3": $ma-color3,
+    "bg-color1": $bg-color1,
+    "bg-color2": $bg-color2,
+);
+
+/*FONT-WEIGHT*/
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+
+/*Bootstrap*/
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+/*BOOTSTRAP MODULES*/
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/custom-forms";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+/*BOOT*/
+@import "boot";
+
+/*EXTENDED*/
+%title{
+    margin: 0 0 3em 0;
+    padding: 0;
+    h1{
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-size: 2.375em;
+        font-weight: $font-regular;
+        text-align: center;
+        color: $ma-color2;
+        span{
+            font-size: inherit;
+            font-weight: inherit;
+            color: $ma-color1;
+        }
+    }
+    hr{
+        margin: 1.375em auto;
+        padding: 0;
+        width: 5em;
+        border: 2px solid $ma-color1;
+    }
+}
