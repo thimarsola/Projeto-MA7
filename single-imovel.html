@@ -115,7 +115,7 @@
                 <div class="container">
                     <div class="row">
                         <!--IMMOBILE-->
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-4">
                             <div class="main_immobile_dates">
                                 <!--HEADER-->
                                 <header class="main_immobile_dates_header">
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <!--FORM-->
-                        <div class="col-md-5">
+                        <div class="col-md-5 mt-4">
                             <div id="formulario" class="main_immobile_form">
                                 <div class="main_contact_content_form_header">
                                     <p>
@@ -161,37 +161,37 @@
                                 </div>
                                 <!--FORM-->
                                 <div class="main_contact_content_form_content">
-                                    <form action="">
+                                    <form>
                                         <!--CODE-->
                                         <div class="form-group">
                                             <label for="code" class="d-none">Código do imóvel</label>
-                                            <input type="text" class="form-control" name="code" placeholder="LE001"
+                                            <input id="code" type="text" class="form-control" placeholder="LE001"
                                                 size="35" maxlength="100" disabled>
                                         </div>
                                         <!--NAME-->
                                         <div class="form-group">
                                             <label for="name" class="d-none">Insira seu nome</label>
-                                            <input type="text" class="form-control" name="name"
+                                            <input id="name" type="text" class="form-control"
                                                 placeholder="Insira seu nome" size="35" maxlength="100" required>
                                         </div>
                                         <!--MAIL-->
                                         <div class="form-group">
                                             <label for="mail" class="d-none">Insira seu melhor e-mail</label>
-                                            <input type="email" class="form-control" name="mail"
+                                            <input id="mail" type="email" class="form-control"
                                                 placeholder="Insira seu melhor e-mail" size="35" maxlength="70"
                                                 required>
                                         </div>
                                         <!--PHONE-->
                                         <div class="form-group">
                                             <label for="phone" class="d-none">Insira seu telefone com DDD...</label>
-                                            <input type="tel" class="form-control" name="mail"
+                                            <input id="phone" type="tel" class="form-control"
                                                 placeholder="Insira seu telefone com DDD..." size="35" maxlength="70"
                                                 required>
                                         </div>
                                         <!--MESSAGE-->
                                         <div class="form-group">
                                             <label for="message" class="d-none">Escreva sua mensagem...</label>
-                                            <textarea class="form-control" name="message"
+                                            <textarea id="message" class="form-control"
                                                 placeholder="Escreva sua mensagem..." rows="4" required></textarea>
                                         </div>
                                         <!-- Button action -->
@@ -211,7 +211,7 @@
                 <div class="container">
                     <div class="row">
                         <!--SIZE-->
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                             <div class="main_informations_card">
                                 <img src="_cdn/img/vt-size.svg" alt="MA7 Negócios">
                                 <div class="main_informations_card_body">
@@ -221,7 +221,7 @@
                             </div>
                         </div>
                         <!--BEDROOM-->
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                             <div class="main_informations_card">
                                 <img src="_cdn/img/vt-bedroom.svg" alt="MA7 Negócios">
                                 <div class="main_informations_card_body">
@@ -231,7 +231,7 @@
                             </div>
                         </div>
                         <!--SIZE-->
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                             <div class="main_informations_card">
                                 <img src="_cdn/img/vt-bathroom.svg" alt="MA7 Negócios">
                                 <div class="main_informations_card_body">
@@ -241,7 +241,7 @@
                             </div>
                         </div>
                         <!--SIZE-->
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                             <div class="main_informations_card">
                                 <img src="_cdn/img/vt-garage.svg" alt="MA7 Negócios">
                                 <div class="main_informations_card_body">
@@ -394,6 +394,7 @@
     <!-- SCRIPTS -->
     <script src="_cdn/js/jquery.min.js"></script>
     <script src="_cdn/js/bootstrap.bundle.js"></script>
+    <script src="_cdn/js/main.js"></script>
 </body>
 
 </html>

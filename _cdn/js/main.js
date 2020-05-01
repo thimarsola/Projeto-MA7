@@ -1,5 +1,5 @@
 // GoTo
-const menuItens = document.querySelectorAll(['nav a[href^="#"]', '.main_cta a[href^="#"]']);
+const menuItens = document.querySelectorAll(['nav a[href^="#"]', '.main_cta a[href^="#"]','#cta_imovel a[href^="#"]']);
 menuItens.forEach(item =>{
     item.addEventListener('click', scrollToIdOnClick);
 });

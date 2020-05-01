@@ -1,0 +1,32 @@
+//TABLET
+@media screen and (max-width: 768px) {
+    //BODY
+    *{
+        font-size: 14px;
+    }
+}
+
+//MOBILE
+@media screen and (max-width: 320px){
+    #informacoes{
+        .main_auction_content{
+            .main_auction_content_table{
+                table{
+                    thead{
+                        th{
+                            font-size: .75em !important;
+                        }
+                    }
+                    tbody{
+                        th[scope="row"], td{
+                            font-size: .75em !important;
+                            strong{
+                                font-size: inherit !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

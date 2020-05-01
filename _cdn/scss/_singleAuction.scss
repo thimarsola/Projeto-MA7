@@ -59,7 +59,7 @@
                     }
                 }
                 tbody{
-                    th[scope="row"]{
+                    th[scope="row"], td{
                         font:{
                             weight: $font-medium;
                         }
@@ -83,8 +83,7 @@
             strong{
                 font:{
                     weight: $font-medium;
-                }
-                color: $ma-color2;
+                }               
             }
         }
     }
