@@ -11,7 +11,7 @@
     <meta property="og:title" content="MA7 Negócios - Arrematação de Imóveis e Aquisição de Créditos/Diretos">
     <meta property="og:site_name" content="MA7 Negócios">
     <meta property="og:description" content="A MA7 Negócios é uma empresa especializada em estruturar e desenvolver negócios no segmento “distressed”.">
-    <meta property="og:image" content="http://www.repousocasarosada.com.br/_cdn/img/card.jpg">
+    <meta property="og:image" content="http://www.ma7negocios.com.br/_cdn/img/card.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="600">

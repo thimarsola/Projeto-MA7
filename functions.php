@@ -3,26 +3,29 @@
 function loadScripts()
 {
     //CSS
-    wp_enqueue_style('font', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap', [], '1.0.0', 'all');
-    if ( is_home ()){
+    wp_enqueue_style('font-google', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap', [], '1.0.0', 'all');
+    if ( is_home()){
         wp_enqueue_style('main', get_template_directory_uri() . '/_cdn/css/styles_main.css', [], '1.0.0', 'all');
     }
-    if ( is_single ()){
+    if ( is_single()){
         wp_enqueue_style('single_blog', get_template_directory_uri() . '/_cdn/css/styles_singleBlog.css', [], '1.0.0', 'all');
     }
-    if ( is_single ('imovel')){
+    if ( is_singular('imoveis')){
         wp_enqueue_style('single_imovel', get_template_directory_uri() . '/_cdn/css/styles_singleImovel.css', [], '1.0.0', 'all');
     }
-    if ( is_page ('cases')){
+    if ( is_page('cases')){
         wp_enqueue_style('cases', get_template_directory_uri() . '/_cdn/css/styles_case.css', [], '1.0.0', 'all');
     }
-    if ( is_page ('contato')){
+    if ( is_page('contato')){
         wp_enqueue_style('contact', get_template_directory_uri() . '/_cdn/css/styles_contact.css', [], '1.0.0', 'all');
     }
-    if ( is_page ('duvidas-frequentes')){
+    if ( is_page('duvidas-frequentes')){
         wp_enqueue_style('doubts', get_template_directory_uri() . '/_cdn/css/styles_doubts.css', [], '1.0.0', 'all');
     }
-    if ( is_page ('leiloes')){
+    if ( is_page('quem-somos')){
+        wp_enqueue_style('page-about', get_template_directory_uri() . '/_cdn/css/styles_about.css', [], '1.0.0', 'all');
+    }
+    if ( is_page('leiloes')){
         wp_enqueue_style('auctions', get_template_directory_uri() . '/_cdn/css/styles_auctions.css', [], '1.0.0', 'all');
     }
     if ( is_search()){
@@ -209,7 +212,7 @@ function pagination( $args = '' ) {
     return $r;
 }
 
-// //NAVBAR
+//NAVBAR
 // function register_navwalker(){
 //     require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 // }
@@ -223,15 +226,17 @@ function pagination( $args = '' ) {
 //     ]
 // );
 
-//CREATE SEARCH FORM
-register_sidebar(
-    [
-        'name' => 'search',
-        'id' => 'search',
-        'before_widget' => '<div class="main_product_content_form">',
-        'after_widget' => '</div>',
-//        'before_title' => '<h4>',
-//        'after_title' => '</h4>'
-    ]
-);
+// CREATE SEARCH FORM
+// register_sidebar(
+//     [
+//         'name' => 'search',
+//         'id' => 'search',
+//         'before_widget' => '<div class="main_product_content_form">',
+//         'after_widget' => '</div>',
+// //        'before_title' => '<h4>',
+// //        'after_title' => '</h4>'
+//     ]
+// );
 
+// POST THUMBNAILS
+add_theme_support('post-thumbnails');

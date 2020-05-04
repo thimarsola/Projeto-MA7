@@ -1,3 +1,9 @@
+<?php
+/**
+ *  Template Name: Leilões
+ */
+?>
+
 <?php get_header(); ?>
 <!-- MAIN -->
 <main id="main">
@@ -6,8 +12,7 @@
         <div class="container">
             <!-- HEADER -->
             <header class="main_filter_header">
-                <h1><img src="<?php echo get_template_directory_uri(); ?>/_cdn/img/vt-filter.svg"
-                        alt="MA7 Negócios">Filtro</h1>
+                <h1><img src="<?php echo get_template_directory_uri(); ?>/_cdn/img/vt-filter.svg" alt="MA7 Negócios">Filtro</h1>
             </header>
             <!-- CONTENT -->
             <div class="main_filter_content">
@@ -17,7 +22,7 @@
                         <div class="form-group col-sm-3 mt-sm-4">
                             <label for="state">Estado</label>
                             <br>
-                            <select name="state" id="state" class="form-control">
+                            <select name="state" id="state" class="form-control" >
                                 <option>Escolha...</option>
                             </select>
                         </div>
@@ -48,11 +53,9 @@
                     </div>
                     <!-- BUTTON -->
                     <div class="main_filter_content_button">
-                        <button type="submit" class="btn btn-ma-color1"><img
-                                src="<?php echo get_template_directory_uri(); ?>/_cdn/img/vt-search.svg"
-                                alt="MA7 Negócios">Pesquisar</button>
+                        <button type="submit" class="btn btn-ma-color1"><img src="<?php echo get_template_directory_uri(); ?>/_cdn/img/vt-search.svg" alt="MA7 Negócios">Pesquisar</button>
                     </div>
-                </form>
+            </form>
             </div>
         </div>
     </section>
@@ -62,22 +65,25 @@
         <div class="container">
             <!-- HEADER -->
             <header class="main_auctions_header">
-                <h1>Próximos leilões</h1>
+                <h1>Conheça todos os nossos <span>Leilões!</span></h1>
                 <hr>
-                <p>As melhores oportunidades de negócio você encontra aqui!</p>
+                <p>Veja abaixo nossos Leilões!</p>
             </header>
             <!-- CONTENT -->
             <div class="main_auctions_content">
                 <div class="row">
-                    <!-- CARD -->
+                    
                         <?php
+                            $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
+
                             $arg_category = [
                                 'posts_per_page' => 9,
                                 'post_type' => 'imoveis',
+                                'paged' => $paged,
                             ]
                         ?>
 
-                        <?php
+                        <?php   
                         // the query
                         $imovelHome = new WP_Query( $arg_category ); ?>
 
@@ -88,59 +94,38 @@
                         <?php wp_reset_postdata(); ?>
 
                         <?php else : ?>
-                        <p><?php _e( 'Não existem produtos cadastrados no momento.' ); ?></p>
+                            <p><?php _e( 'Não existem produtos cadastrados no momento.' ); ?></p>
                         <?php endif; ?>
                 </div>
             </div>
-            <div class="main_auctions_button">
-                <a href="<?php echo esc_url(get_permalink(get_page_by_title('leiloes'))); ?>" class="btn btn-ma-color1">veja mais <img
-                        src="<?php echo get_template_directory_uri(); ?>/_cdn/img/vt-see-more.svg"
-                        alt="MA7 Negócios"></a>
-            </div>
-        </div>
-    </section>
+            <!-- PAGINATION -->
+            <div class="main_auctions_pagination mt-5">
+                <nav>
+                    <?php
+                        $big = 999999999; // need an unlikely integer
 
-    <!-- BLOG NOTICES -->
-    <section id="blog" class="main_blog">
-        <div class="container">
-            <!-- HEADER -->
-            <header class="main_blog_header">
-                <h1>Últimas notícias do blog</h1>
-                <hr>
-                <p>Aqui você encontra os melhores conteúdos sobre o segmento!</p>
-            </header>
-            <!-- CONTENT -->
-            <div class="main_blog_content">
-                <div class="row">
-                    <article class="col-lg-4 col-md-6 my-3">
-                        <div class="main_blog_content_card">
-                            <!-- CARD IMAGE -->
-                            <div class="img_card">
-                                <img src="_cdn/img/img-test-blog.jpg" alt="MA7 Negócios">
-                            </div>
-                            <!-- CARD CONTENT -->
-                            <div class="content_card">
-                                <!-- CARD HEADER -->
-                                <header class="content_card_header">
-                                    <h2>6 cidades boas para morar no Brasil</h2>
-                                    <p><small>09/03/2020</small></p>
-                                </header>
-                                <!-- CARD TYPE -->
-                                <div class="content_card_description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque ipsum,
-                                        ullamcorper vel velit at, placerat sagittis lacus. Phasellus vel dolor dui...
-                                    </p>
-                                </div>
-                                <p class="link_card"><a href="#">Ler Mais...</a></p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="main_blog_button">
-                <a href="<?php echo esc_url(get_permalink(get_page_by_title('blog'))); ?>" class="btn btn-ma-color1">veja mais <img
-                        src="<?php echo get_template_directory_uri(); ?>/_cdn/img/vt-see-more.svg"
-                        alt="MA7 Negócios"></a>
+                        $pages = pagination(
+                            [
+                                'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                                'format' => '?paged=%#%',
+                                'current' => max( 1, get_query_var('paged') ),
+                                'total' => $imovelHome->max_num_pages,
+                                'prev_text' => '<',
+                                'next_text' => '>',
+                                'type' => 'array',
+                            ]
+                        );
+
+                        if( is_array( $pages ) ) {
+
+                            echo '<ul class="pagination justify-content-center">';
+                            foreach ( $pages as $page ) {
+                                echo "<li class='page-item'>$page</li>";
+                            }
+                            echo '</ul>';
+                        }
+                    ?>
+                </nav>
             </div>
         </div>
     </section>
